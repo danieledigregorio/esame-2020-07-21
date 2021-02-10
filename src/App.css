@@ -1,38 +1,79 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background-color: #282c34;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50vw;
+}
+
+input, select {
+  height: 2em;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: solid 1px white;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-bottom: solid 2px white;
+}
+option {
+  background: #1a1a1a;
+}
+
+button {
+  width: 7em;
+  height: 2.2em;
+  border-radius: 10px;
+  border: solid 2px white;
+  background: none;
+  color: white;
+}
+button:hover {
+  border: solid 1px white;
+  background: #292929;
+}
+button:focus {
+  outline: none;
+}
+
+.eventoSelezionato {
+  background-color: white;
+  color: black;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+p {
+  margin: 0px
+}
+
+#delete {
+  background-color: #004e98;
+  height: 3em;
+  border-radius: 20px;
+}
+#delete:hover {
+  background-color: #00386d;
 }
